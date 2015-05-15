@@ -65,7 +65,7 @@ namespace Lens_Data_File_Creator
                 fs.Close();
                 */
 
-                richTextBoxHeader.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
+                richTextBoxHeader.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
 
 
             }

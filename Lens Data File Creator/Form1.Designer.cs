@@ -34,6 +34,8 @@
             this.buttonSaveHeader = new System.Windows.Forms.Button();
             this.buttonLoadHeader = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonMirrorY = new System.Windows.Forms.Button();
+            this.buttonMirrorX = new System.Windows.Forms.Button();
             this.textBoxRMat22 = new System.Windows.Forms.TextBox();
             this.textBoxRMat12 = new System.Windows.Forms.TextBox();
             this.textBoxRMat21 = new System.Windows.Forms.TextBox();
@@ -57,8 +59,6 @@
             this.buttonSaveFullText = new System.Windows.Forms.Button();
             this.buttonFullFileNoRotate = new System.Windows.Forms.Button();
             this.CalcSkew = new System.Windows.Forms.Button();
-            this.buttonMirrorX = new System.Windows.Forms.Button();
-            this.buttonMirrorY = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -129,6 +129,26 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Body";
+            // 
+            // buttonMirrorY
+            // 
+            this.buttonMirrorY.Location = new System.Drawing.Point(176, 278);
+            this.buttonMirrorY.Name = "buttonMirrorY";
+            this.buttonMirrorY.Size = new System.Drawing.Size(65, 43);
+            this.buttonMirrorY.TabIndex = 20;
+            this.buttonMirrorY.Text = "Mirror Y";
+            this.buttonMirrorY.UseVisualStyleBackColor = true;
+            this.buttonMirrorY.Click += new System.EventHandler(this.buttonMirrorY_Click);
+            // 
+            // buttonMirrorX
+            // 
+            this.buttonMirrorX.Location = new System.Drawing.Point(176, 233);
+            this.buttonMirrorX.Name = "buttonMirrorX";
+            this.buttonMirrorX.Size = new System.Drawing.Size(65, 43);
+            this.buttonMirrorX.TabIndex = 20;
+            this.buttonMirrorX.Text = "MirrorX";
+            this.buttonMirrorX.UseVisualStyleBackColor = true;
+            this.buttonMirrorX.Click += new System.EventHandler(this.buttonMirrorX_Click);
             // 
             // textBoxRMat22
             // 
@@ -328,27 +348,8 @@
             this.CalcSkew.TabIndex = 9;
             this.CalcSkew.Text = "Calculate Skew";
             this.CalcSkew.UseVisualStyleBackColor = true;
+            this.CalcSkew.Visible = false;
             this.CalcSkew.Click += new System.EventHandler(this.CalcSkew_Click);
-            // 
-            // buttonMirrorX
-            // 
-            this.buttonMirrorX.Location = new System.Drawing.Point(176, 233);
-            this.buttonMirrorX.Name = "buttonMirrorX";
-            this.buttonMirrorX.Size = new System.Drawing.Size(65, 43);
-            this.buttonMirrorX.TabIndex = 20;
-            this.buttonMirrorX.Text = "MirrorX";
-            this.buttonMirrorX.UseVisualStyleBackColor = true;
-            this.buttonMirrorX.Click += new System.EventHandler(this.buttonMirrorX_Click);
-            // 
-            // buttonMirrorY
-            // 
-            this.buttonMirrorY.Location = new System.Drawing.Point(176, 278);
-            this.buttonMirrorY.Name = "buttonMirrorY";
-            this.buttonMirrorY.Size = new System.Drawing.Size(65, 43);
-            this.buttonMirrorY.TabIndex = 20;
-            this.buttonMirrorY.Text = "Mirror Y";
-            this.buttonMirrorY.UseVisualStyleBackColor = true;
-            this.buttonMirrorY.Click += new System.EventHandler(this.buttonMirrorY_Click);
             // 
             // Form1
             // 
