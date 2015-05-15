@@ -1,0 +1,17 @@
+[CALIBRATION]= 12825
+[RTC4]=	      0
+[FITORDER]=	  1
+[SMOOTHING]=	  1
+[AUTO_FIT]=	  1
+[TOLERANCE]=	  0.001
+[Limit(Bits)]= 524288
+[Limit(mm)]=	  123.000
+[OffsetX]=	  0.000
+[OffsetY]=	  0.000
+[Deviation]=	  0.005
+[GRIDNUMBERS]= 4    4
+[GRIDVALUES_X]=  -20  -15  -10  -5  0
+[GRIDVALUES_X]=  5  10  15  20
+[GRIDVALUES_Y]=  -20  -15  -10  -5  0
+[GRIDVALUES_Y]=  5  10  15  20
+Xn	Yn	X mm	Y mm

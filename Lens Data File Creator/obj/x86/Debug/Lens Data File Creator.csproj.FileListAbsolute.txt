@@ -7,3 +7,12 @@
 \\msolv-file-01\usershares\simon.henley\my documents\visual studio 2010\Projects\Lens Data File Creator\Lens Data File Creator\obj\x86\Debug\GenerateResource.write.1.tlog
 \\msolv-file-01\usershares\simon.henley\my documents\visual studio 2010\Projects\Lens Data File Creator\Lens Data File Creator\obj\x86\Debug\Lens Data File Creator.exe
 \\msolv-file-01\usershares\simon.henley\my documents\visual studio 2010\Projects\Lens Data File Creator\Lens Data File Creator\obj\x86\Debug\Lens Data File Creator.pdb
+C:\Lens Correction\Lens Data File Creator\Lens Data File Creator\obj\x86\Debug\Lens Data File Creator.exe
+C:\Lens Correction\Lens Data File Creator\Lens Data File Creator\obj\x86\Debug\Lens Data File Creator.pdb
+C:\Lens Correction\Lens Data File Creator\Lens Data File Creator\bin\Debug\Lens Data File Creator.exe
+C:\Lens Correction\Lens Data File Creator\Lens Data File Creator\bin\Debug\Lens Data File Creator.pdb
+C:\Lens Correction\Lens Data File Creator\Lens Data File Creator\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Lens Correction\Lens Data File Creator\Lens Data File Creator\obj\x86\Debug\Lens_Data_File_Creator.Form1.resources
+C:\Lens Correction\Lens Data File Creator\Lens Data File Creator\obj\x86\Debug\Lens_Data_File_Creator.Properties.Resources.resources
+C:\Lens Correction\Lens Data File Creator\Lens Data File Creator\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Lens Correction\Lens Data File Creator\Lens Data File Creator\obj\x86\Debug\GenerateResource.write.1.tlog

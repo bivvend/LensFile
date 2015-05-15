@@ -22,14 +22,14 @@ namespace Lens_Data_File_Creator
         {
             InitializeComponent();
             textBoxMat11.Text = "0";
-            textBoxMat12.Text = "1";
-            textBoxMat21.Text = "-1";
+            textBoxMat12.Text = "-1";
+            textBoxMat21.Text = "1";
             textBoxMat22.Text = "0";
 
-            textBoxRMat11.Text = "-0.00609";
-            textBoxRMat12.Text = "0.999981";
-            textBoxRMat21.Text = "-0.999981";
-            textBoxRMat22.Text = "-0.00609";
+            textBoxRMat11.Text = "0";
+            textBoxRMat12.Text = "-1";
+            textBoxRMat21.Text = "1";
+            textBoxRMat22.Text = "0";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -324,5 +324,94 @@ namespace Lens_Data_File_Creator
 
             }
         }
+
+        private void CalcSkew_Click(object sender, EventArgs e)
+        {
+            double dotproduct = 0.0d;
+            double ModA = 0.0d;
+            double ModB = 0.0d;
+            double Angle = 0.0d;
+
+            if (Points.Count > 3)
+            {
+                // (X1-X0)*(X2-X0)  + (Y1-Y0)*(Y2-Y0)
+                dotproduct = (Points[1].MeasuredX - Points[0].MeasuredX) * (Points[2].MeasuredX - Points[0].MeasuredX) + (Points[1].MeasuredY - Points[0].MeasuredY) * (Points[2].MeasuredY - Points[0].MeasuredY);
+                ModA = Math.Sqrt((Points[1].MeasuredX - Points[0].MeasuredX) * (Points[1].MeasuredX - Points[0].MeasuredX) + (Points[1].MeasuredY - Points[0].MeasuredY) * (Points[1].MeasuredY - Points[0].MeasuredY));
+                ModB = Math.Sqrt((Points[2].MeasuredX - Points[0].MeasuredX) * (Points[2].MeasuredX - Points[0].MeasuredX) + (Points[2].MeasuredY - Points[0].MeasuredY) * (Points[2].MeasuredY - Points[0].MeasuredY));
+                Angle = (Math.Acos(dotproduct / (ModA * ModB)) - (Math.PI/2.0d) )* 1000000.0d;
+                MessageBox.Show(Angle.ToString() + " micro-radians");
+            }
+            else
+            {
+                MessageBox.Show("Not enough data");
+                
+            }
+        }
+
+        private void buttonMirrorX_Click(object sender, EventArgs e)
+        {
+            
+
+            int NewIndexX = 0;
+            float NewX = 0.0f;
+                        
+            //modify points
+            foreach (Point P in Points)
+            {
+                NewX = (float)(P.MeasuredX*-1.0d);
+
+
+                NewIndexX = P.indexX * -1;
+                
+
+                //copy over new data
+
+                P.indexX = NewIndexX;
+                P.MeasuredX = NewX;
+                
+            }
+            //Write back points to richtextbox
+
+            richTextBoxBody.Clear(); //clear it first so can append lines
+
+            foreach (Point P in Points)
+            {
+                richTextBoxBody.AppendText(P.indexX.ToString() + "\t" + P.indexY.ToString() + "\t" + P.MeasuredX.ToString() + "\t" + P.MeasuredY.ToString() + Environment.NewLine);
+
+            }
+        }
+
+        private void buttonMirrorY_Click(object sender, EventArgs e)
+        {
+            int NewIndexY = 0;
+            float NewY = 0.0f;
+
+            //modify points
+            foreach (Point P in Points)
+            {
+                NewY = (float)(P.MeasuredY * -1.0d);
+
+
+                NewIndexY = P.indexY * -1;
+
+
+                //copy over new data
+
+                P.indexY = NewIndexY;
+                P.MeasuredY = NewY;
+
+            }
+            //Write back points to richtextbox
+
+            richTextBoxBody.Clear(); //clear it first so can append lines
+
+            foreach (Point P in Points)
+            {
+                richTextBoxBody.AppendText(P.indexX.ToString() + "\t" + P.indexY.ToString() + "\t" + P.MeasuredX.ToString() + "\t" + P.MeasuredY.ToString() + Environment.NewLine);
+
+            }
+        }
+
+        
     }
 }
