@@ -65,7 +65,7 @@ namespace Lens_Data_File_Creator
                 fs.Close();
                 */
 
-                richTextBoxHeader.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+                richTextBoxHeader.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
 
 
             }
@@ -86,13 +86,13 @@ namespace Lens_Data_File_Creator
             {
                 try
                 {
-                    richTextBoxHeader.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+                    richTextBoxHeader.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.RichText);
                 }
                 catch (Exception EX)
                 {
                     if (EX.Message.ToLower().Contains("format is not valid"))
                     {
-                        richTextBoxHeader.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.RichText);
+                        richTextBoxHeader.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.PlainText);
                     }
                 }
             }

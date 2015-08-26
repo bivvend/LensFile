@@ -25,3 +25,11 @@ C:\github\LensFile\Lens Data File Creator\obj\x86\Debug\Lens_Data_File_Creator.F
 C:\github\LensFile\Lens Data File Creator\obj\x86\Debug\Lens_Data_File_Creator.Properties.Resources.resources
 C:\github\LensFile\Lens Data File Creator\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\github\LensFile\Lens Data File Creator\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Programs\LensFile\Lens Data File Creator\bin\Debug\Lens Data File Creator.exe
+C:\Programs\LensFile\Lens Data File Creator\bin\Debug\Lens Data File Creator.pdb
+C:\Programs\LensFile\Lens Data File Creator\obj\x86\Debug\Lens Data File Creator.csprojResolveAssemblyReference.cache
+C:\Programs\LensFile\Lens Data File Creator\obj\x86\Debug\Lens_Data_File_Creator.Form1.resources
+C:\Programs\LensFile\Lens Data File Creator\obj\x86\Debug\Lens_Data_File_Creator.Properties.Resources.resources
+C:\Programs\LensFile\Lens Data File Creator\obj\x86\Debug\Lens Data File Creator.csproj.GenerateResource.Cache
+C:\Programs\LensFile\Lens Data File Creator\obj\x86\Debug\Lens Data File Creator.exe
+C:\Programs\LensFile\Lens Data File Creator\obj\x86\Debug\Lens Data File Creator.pdb
